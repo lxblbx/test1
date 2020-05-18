@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="作者" content="刘西贝-刘贝西">
+    <meta name="description" content="lxb">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+        <div class="wrapper">
+            <div class="banner">
+                <!-- 居中 -->
+                <h1 align = 'center' style="color: aqua;font-size: 35px;">**民院聊天室**</h1>
+                <span id="status" ></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <div class="items">
+                    <input id="colorStyle" type="color" placeholder="#000" title="font color" />
+                   <!-- 表情按钮 -->
+                    <input id="emoji" type="button" value="表情" title="emoji" />
+
+
+                    <label for="sendImage" class="imageLable">
+                        <!-- 图片按钮 -->
+                        <input type="button" value="图片" />
+                        <input id="sendImage" type="file" value="image"/>
+                    </label>
+
+
+                    <!-- 清屏按钮 -->
+                    <input id="clearBtn" type="button" value="清屏" title="clear screen"/>
+                </div>
+                <textarea id="messageInput" placeholder="按enter发送"></textarea>
+                <!-- 发送按钮 -->
+                <input id="sendBtn" type="button" value="发送" title="send" />
+                <div id="emojiWrapper"></div>
+            </div>
+        </div>
+    
+    <div id="loginWrapper">
+        <p id="info">等待连接********</p>
+        <div id="nickWrapper">
+            <input type="text" placeholder="nickname" id="nicknameInput" />
+            <input type="button" value="确定" id="loginBtn"/>
+        </div>
+    </div>
+
+
+    <footer>
+        <small>view on <a href="https://github.com/Wayou/HiChat">GitHub</a> | <a href="https://mail.qq.com/cgi-bin/frame_html?sid=PuQzS8VTP7QDbl0D&r=1d63989cc62f9fe5d663115dda003759">联系我</a></small>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lbx.js"></script>
+   <!--  <script>
+    /**REMOVE ME IF YOU CANT ACCESS GOOGLE SERVICE**/
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-46794744-7', 'hichat.herokuapp.com');
+      ga('send', 'pageview');
+    /**REMOVE END**/
+</script>
+ -->
+</body>
+</html>
